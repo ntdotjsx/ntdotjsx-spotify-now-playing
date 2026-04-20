@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for ntdotjsx-spotify-now-playing on 2026-04-20T16:29:11Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'ntdotjsx-spotify-now-playing'
+primary_region = 'ams'
+
+[build]
+  [build.args]
+    GO_VERSION = '1.26.1'
+
+[env]
+  PORT = '8080'
+
+[http_service]
+  internal_port = 8079
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 256
