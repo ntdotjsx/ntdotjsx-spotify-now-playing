@@ -19,7 +19,7 @@ func main() {
 		log.Printf("No .env file found")
 	}
 
-	port := 9700
+	port := 8080
 
 	mux := http.NewServeMux()
 
