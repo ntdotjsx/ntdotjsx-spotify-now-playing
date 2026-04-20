@@ -175,6 +175,4 @@ curl -N http://localhost:9700/sse
 
 curl.exe -X POST "https://accounts.spotify.com/api/token" -H "Authorization: Basic <Base64>" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=authorization_code&code=<code redi>&redirect_uri=https://ntdotjsx-spotify-now-playing.fly.dev"
 
-{"access_token":"BQDjVjq4DHybLDfPX7wq6M-3ecO6TDcop-UDW5CKA_n5Z4ShOb3ggBHM8cOFPGkmoZoAy0iHhgSYMKbK-z7jDmDMKjxIlXxXeS2nHYjZ47ju5p9CO1t9IU7ILEW2cer-xrOA2b7wTSxW7Ws_uFGikE7HMqGtk22RpZHJWjru4pHPsyK4RjTxO2JKYAnqAiKIVvHvnht6y1jMA9FpjC7Lw90O8DwEZc1T2Kp3TFESKtZpqEukJ3zFmkReB8E","token_type":"Bearer","expires_in":3600,"refresh_token":"AQA3nVREpHbDIlenCxtM3ml8UwZ9t4ZogvIGeDjwEXnCHOd5l-j6lLGIEk_GRijLGkiw7yh3dIfG4rf0kll9DPVhBs7NZVfF04n51kevsXAJ-ko3SACG07lYRzasXiYWHJw","scope":"user-read-playback-state user-read-currently-playing"}
-
 [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("CLIENT_ID:CLIENT_SECRET"))
