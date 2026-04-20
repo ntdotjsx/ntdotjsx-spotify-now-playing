@@ -36,7 +36,7 @@
 	<script>
 		const card = document.querySelector("body > div");
 
-		const es = new EventSource("http://localhost:9700/sse");
+		const es = new EventSource("https://ntdotjsx-spotify-now-playing.fly.dev/sse");
 
 		es.addEventListener("spotify", ({ data }) => {
 			const { album, artists, track, progress, duration } = JSON.parse(data);
